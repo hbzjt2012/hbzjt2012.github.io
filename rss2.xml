@@ -8,26 +8,26 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>积累技术知识，记录生活点滴</description>
-    <pubDate>Wed, 22 May 2019 05:03:45 GMT</pubDate>
+    <pubDate>Tue, 04 Jun 2019 06:15:16 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
-      <title>Hello World</title>
-      <link>https://hbzjt2012.github.io/2019/05/22/hello-world/</link>
-      <guid>https://hbzjt2012.github.io/2019/05/22/hello-world/</guid>
-      <pubDate>Wed, 22 May 2019 05:03:45 GMT</pubDate>
+      <title>Hexo+Next搭建个人博客</title>
+      <link>https://hbzjt2012.github.io/2019/06/04/Hexo+Next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</link>
+      <guid>https://hbzjt2012.github.io/2019/06/04/Hexo+Next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</guid>
+      <pubDate>Tue, 04 Jun 2019 06:06:16 GMT</pubDate>
       <description>
       
         
         
-          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+          &lt;h1 id=&quot;缘由&quot;&gt;&lt;a href=&quot;#缘由&quot; class=&quot;headerlink&quot; title=&quot;缘由&quot;&gt;&lt;/a&gt;缘由&lt;/h1&gt;&lt;p&gt;&amp;emsp;&amp;emsp;虽然目前的博客网站有很多，如CSDN、博客园等等，但是出于个人方便和某种心理作用，一直想搭建一个属于自己的博客网站，
         
       
       </description>
       
-      <content:encoded><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content:encoded>
+      <content:encoded><![CDATA[<h1 id="缘由"><a href="#缘由" class="headerlink" title="缘由"></a>缘由</h1><p>&emsp;&emsp;虽然目前的博客网站有很多，如CSDN、博客园等等，但是出于个人方便和某种心理作用，一直想搭建一个属于自己的博客网站，当然如果大家浏览国外网站比较多的话，很多外国朋友都有搭建自己的个人网站来记录学习或者生活点滴的习惯。<br>&emsp;&emsp;但是奈何自己的学识有限，因此很长一段时间这个计划没有成形，前不久发现大家使用Hexo搭建博客比较方便，对于我这种入门小白，再合适不过了，使用Hexo加Next主题不用太长时间就可以搭建一个漂亮的个人博客网站出来，经过几天的折腾，现在博客网站已经有了雏形，后续会再进行不断的优化。</p><p>&emsp;&emsp;<strong>从今天开始再此记录自己的学习记录，同时与大家分享自己的生活点滴，希望以后可以在这里找到美好的回忆！</strong></p><h1 id="博客搭建"><a href="#博客搭建" class="headerlink" title="博客搭建"></a>博客搭建</h1><p>&emsp;&emsp;关于使用Hexo+Git+Next搭建博客的详细教程，已经有前人写的非常详细，在此列出个人参考的两个教程，并在此向原作者表示感谢！</p><p><strong>参考教程：</strong><br><a href="https://zhuanlan.zhihu.com/p/33616481" target="_blank" rel="noopener">Hexo搭建的GitHub博客之优化大全</a><br><a href="https://www.cnblogs.com/liuxianan/p/build-blog-website-by-hexo-github.html" target="_blank" rel="noopener">使用hexo+github搭建免费个人博客详细教程</a></p><p>&emsp;&emsp;通过以上两个详细的教程很快就可以搭建出个人的博客雏形，至于后续的博客优化可以根据个人喜好来进行整理，关于本博客的部分优化方法，后续也会发布在这里与大家分享！欢迎大家浏览和评论来进行交流！</p><blockquote><p>后续会陆续将自己以前在各个网站发布的博客和文章迁移到此，并进行整理，开始自己的新的学习历程！🙂</p></blockquote>]]></content:encoded>
       
-      <comments>https://hbzjt2012.github.io/2019/05/22/hello-world/#disqus_thread</comments>
+      <comments>https://hbzjt2012.github.io/2019/06/04/Hexo+Next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/#disqus_thread</comments>
     </item>
     
   </channel>

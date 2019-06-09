@@ -8,8 +8,27 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>积累技术知识，记录生活点滴</description>
-    <pubDate>Sat, 08 Jun 2019 11:34:22 GMT</pubDate>
+    <pubDate>Sun, 09 Jun 2019 15:59:58 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>博客建站更新日志</title>
+      <link>https://hbzjt2012.github.io/2019/06/09/%E5%8D%9A%E5%AE%A2%E5%BB%BA%E7%AB%99%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/</link>
+      <guid>https://hbzjt2012.github.io/2019/06/09/%E5%8D%9A%E5%AE%A2%E5%BB%BA%E7%AB%99%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/</guid>
+      <pubDate>Sun, 09 Jun 2019 15:57:43 GMT</pubDate>
+      <description>
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla
+        
+      
+      </description>
+      
+      <content:encoded><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="博客建站更新日志"><a href="#博客建站更新日志" class="headerlink" title="博客建站更新日志"></a>博客建站更新日志</h1><ul><li>2019.06.09 添加关于界面，增加博客音乐播放插件</li></ul>]]></content:encoded>
+      
+      <comments>https://hbzjt2012.github.io/2019/06/09/%E5%8D%9A%E5%AE%A2%E5%BB%BA%E7%AB%99%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>博客新增留言板和Valine评论系统</title>
@@ -20,12 +39,12 @@
       
         
         
-          &lt;p&gt;&amp;emsp;&amp;emsp;今天主要对博客进行了三方面的优化，包括&lt;code&gt;添加字数统计和阅读时长&lt;/code&gt;、&lt;code&gt;添加留言板页面&lt;/code&gt;以及&lt;code&gt;给博客添加Valine评论系统&lt;/code&gt;。&lt;/p&gt;&lt;h1 id=&quot;添加字数统计和阅读时长&quot;&gt;&lt;a hr
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla
         
       
       </description>
       
-      <content:encoded><![CDATA[<p>&emsp;&emsp;今天主要对博客进行了三方面的优化，包括<code>添加字数统计和阅读时长</code>、<code>添加留言板页面</code>以及<code>给博客添加Valine评论系统</code>。</p><h1 id="添加字数统计和阅读时长"><a href="#添加字数统计和阅读时长" class="headerlink" title="添加字数统计和阅读时长"></a>添加字数统计和阅读时长</h1><p>&emsp;&emsp;该部分的内容主要参考了下面的教程，首先是<code>hexo-wordcount</code>插件的安装，然后通过对Hexo配置文件进行相应的参数修改即可，详细步骤请参考：</p><p><a href="https://www.jianshu.com/p/baea8c95e39b" target="_blank" rel="noopener">Hexo添加字数统计、阅读时长</a></p><p>&emsp;&emsp;完成后的效果如下：<br><img src="/2019/06/08/博客新增留言板和Valine评论系统/wordcount.png" alt="wordcount"></p><h1 id="添加留言板页面"><a href="#添加留言板页面" class="headerlink" title="添加留言板页面"></a>添加留言板页面</h1><p>&emsp;&emsp;关于如何在Hexo和Next主题下添加留言板页面，步骤请参考：</p><p><a href="https://blog.paddings.cn/2016/05/11/blog/hexo-guestbook/" target="_blank" rel="noopener">Hexo NexT 主题 添加留言本页面</a></p><p>&emsp;&emsp;其中需要注意的是添加<code>guestbook</code>页面后生成的<code>index.md</code>文件需要改为以下内容：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 留言板</span><br><span class="line">date: 2019-06-08 14:12:01</span><br><span class="line">type: guestbook</span><br><span class="line">comments: true</span><br><span class="line">---</span><br><span class="line">&lt;div class=&quot;ds-recent-visitors&quot; data-num-items=&quot;28&quot; data-avatar-size=&quot;42&quot; id=&quot;ds-recent-visitors&quot;&gt;&lt;/div&gt;</span><br></pre></td></tr></table></figure><p>&emsp;&emsp;完成后的效果如下：<br><img src="/2019/06/08/博客新增留言板和Valine评论系统/guestbook.png" alt="guestbook"></p><h1 id="添加Valine评论系统"><a href="#添加Valine评论系统" class="headerlink" title="添加Valine评论系统"></a>添加Valine评论系统</h1><blockquote><p>Valine 诞生于2017年8月7日，是一款基于Leancloud的快速、简洁且高效的无后端评论系统。<br>理论上支持但不限于静态博客，目前已有Hexo、Jekyll、Typecho、Hugo、Ghost 等博客程序在使用Valine。</p></blockquote><p>&emsp;&emsp;添加<code>Valine</code>的操作步骤请参考官网说明和下面的博客讲解，其中设置邮件提醒需要借助<code>LeanCloud</code>实现，由于<code>LeanCloud</code>的开发版每天 6 小时的强制休眠时间，LeanCloud 休眠会导致不能发送提醒邮件，因通过云函数解决 LeanCloud 休眠问题。</p><p><a href="https://www.zhyong.cn/posts/95cb/" target="_blank" rel="noopener">hexo 博客添加 Valine 评论系统</a><br><a href="https://valine.js.org/" target="_blank" rel="noopener">Valine官方网站</a></p><p>&emsp;&emsp;完成后的效果如下：<br><img src="/2019/06/08/博客新增留言板和Valine评论系统/valine.png" alt="valine"><br>&emsp;&emsp;稍后会继续完善其它功能。</p>]]></content:encoded>
+      <content:encoded><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>&emsp;&emsp;今天主要对博客进行了三方面的优化，包括<code>添加字数统计和阅读时长</code>、<code>添加留言板页面</code>以及<code>给博客添加Valine评论系统</code>。</p><h1 id="添加字数统计和阅读时长"><a href="#添加字数统计和阅读时长" class="headerlink" title="添加字数统计和阅读时长"></a>添加字数统计和阅读时长</h1><p>&emsp;&emsp;该部分的内容主要参考了下面的教程，首先是<code>hexo-wordcount</code>插件的安装，然后通过对Hexo配置文件进行相应的参数修改即可，详细步骤请参考：</p><p><a href="https://www.jianshu.com/p/baea8c95e39b" target="_blank" rel="noopener">Hexo添加字数统计、阅读时长</a></p><p>&emsp;&emsp;完成后的效果如下：<br><img src="/2019/06/08/博客新增留言板和Valine评论系统/wordcount.png" alt="wordcount"></p><h1 id="添加留言板页面"><a href="#添加留言板页面" class="headerlink" title="添加留言板页面"></a>添加留言板页面</h1><p>&emsp;&emsp;关于如何在Hexo和Next主题下添加留言板页面，步骤请参考：</p><p><a href="https://blog.paddings.cn/2016/05/11/blog/hexo-guestbook/" target="_blank" rel="noopener">Hexo NexT 主题 添加留言本页面</a></p><p>&emsp;&emsp;其中需要注意的是添加<code>guestbook</code>页面后生成的<code>index.md</code>文件需要改为以下内容：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 留言板</span><br><span class="line">date: 2019-06-08 14:12:01</span><br><span class="line">type: guestbook</span><br><span class="line">comments: true</span><br><span class="line">---</span><br><span class="line">&lt;div class=&quot;ds-recent-visitors&quot; data-num-items=&quot;28&quot; data-avatar-size=&quot;42&quot; id=&quot;ds-recent-visitors&quot;&gt;&lt;/div&gt;</span><br></pre></td></tr></table></figure><p>&emsp;&emsp;完成后的效果如下：<br><img src="/2019/06/08/博客新增留言板和Valine评论系统/guestbook.png" alt="guestbook"></p><h1 id="添加Valine评论系统"><a href="#添加Valine评论系统" class="headerlink" title="添加Valine评论系统"></a>添加Valine评论系统</h1><blockquote><p>Valine 诞生于2017年8月7日，是一款基于Leancloud的快速、简洁且高效的无后端评论系统。<br>理论上支持但不限于静态博客，目前已有Hexo、Jekyll、Typecho、Hugo、Ghost 等博客程序在使用Valine。</p></blockquote><p>&emsp;&emsp;添加<code>Valine</code>的操作步骤请参考官网说明和下面的博客讲解，其中设置邮件提醒需要借助<code>LeanCloud</code>实现，由于<code>LeanCloud</code>的开发版每天 6 小时的强制休眠时间，LeanCloud 休眠会导致不能发送提醒邮件，因通过云函数解决 LeanCloud 休眠问题。</p><p><a href="https://www.zhyong.cn/posts/95cb/" target="_blank" rel="noopener">hexo 博客添加 Valine 评论系统</a><br><a href="https://valine.js.org/" target="_blank" rel="noopener">Valine官方网站</a></p><p>&emsp;&emsp;完成后的效果如下：<br><img src="/2019/06/08/博客新增留言板和Valine评论系统/valine.png" alt="valine"><br>&emsp;&emsp;稍后会继续完善其它功能。</p>]]></content:encoded>
       
       <comments>https://hbzjt2012.github.io/2019/06/08/%E5%8D%9A%E5%AE%A2%E6%96%B0%E5%A2%9E%E7%95%99%E8%A8%80%E6%9D%BF%E5%92%8CValine%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/#disqus_thread</comments>
     </item>
@@ -39,12 +58,12 @@
       
         
         
-          &lt;h1 id=&quot;缘由&quot;&gt;&lt;a href=&quot;#缘由&quot; class=&quot;headerlink&quot; title=&quot;缘由&quot;&gt;&lt;/a&gt;缘由&lt;/h1&gt;&lt;p&gt;&amp;emsp;&amp;emsp;虽然目前的博客网站有很多，如CSDN、博客园等等，但是出于个人方便和某种心理作用，一直想搭建一个属于自己的博客网站，
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla
         
       
       </description>
       
-      <content:encoded><![CDATA[<h1 id="缘由"><a href="#缘由" class="headerlink" title="缘由"></a>缘由</h1><p>&emsp;&emsp;虽然目前的博客网站有很多，如CSDN、博客园等等，但是出于个人方便和某种心理作用，一直想搭建一个属于自己的博客网站，当然如果大家浏览国外网站比较多的话，很多外国朋友都有搭建自己的个人网站来记录学习或者生活点滴的习惯。<br>&emsp;&emsp;但是奈何自己的学识有限，因此很长一段时间这个计划没有成形，前不久发现大家使用Hexo搭建博客比较方便，对于我这种入门小白，再合适不过了，使用Hexo加Next主题不用太长时间就可以搭建一个漂亮的个人博客网站出来，经过几天的折腾，现在博客网站已经有了雏形，后续会再进行不断的优化。</p><p>&emsp;&emsp;<strong>从今天开始再此记录自己的学习记录，同时与大家分享自己的生活点滴，希望以后可以在这里找到美好的回忆！</strong></p><h1 id="博客搭建"><a href="#博客搭建" class="headerlink" title="博客搭建"></a>博客搭建</h1><p>&emsp;&emsp;关于使用Hexo+Git+Next搭建博客的详细教程，已经有前人写的非常详细，在此列出个人参考的两个教程，并在此向原作者表示感谢！</p><p><strong>参考教程：</strong><br><a href="https://zhuanlan.zhihu.com/p/33616481" target="_blank" rel="noopener">Hexo搭建的GitHub博客之优化大全</a><br><a href="https://www.cnblogs.com/liuxianan/p/build-blog-website-by-hexo-github.html" target="_blank" rel="noopener">使用hexo+github搭建免费个人博客详细教程</a></p><p>&emsp;&emsp;通过以上两个详细的教程很快就可以搭建出个人的博客雏形，至于后续的博客优化可以根据个人喜好来进行整理，关于本博客的部分优化方法，后续也会发布在这里与大家分享！欢迎大家浏览和评论来进行交流！</p><blockquote><p>后续会陆续将自己以前在各个网站发布的博客和文章迁移到此，并进行整理，开始自己的新的学习历程！🙂</p></blockquote>]]></content:encoded>
+      <content:encoded><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="缘由"><a href="#缘由" class="headerlink" title="缘由"></a>缘由</h1><p>&emsp;&emsp;虽然目前的博客网站有很多，如CSDN、博客园等等，但是出于个人方便和某种心理作用，一直想搭建一个属于自己的博客网站，当然如果大家浏览国外网站比较多的话，很多外国朋友都有搭建自己的个人网站来记录学习或者生活点滴的习惯。<br>&emsp;&emsp;但是奈何自己的学识有限，因此很长一段时间这个计划没有成形，前不久发现大家使用Hexo搭建博客比较方便，对于我这种入门小白，再合适不过了，使用Hexo加Next主题不用太长时间就可以搭建一个漂亮的个人博客网站出来，经过几天的折腾，现在博客网站已经有了雏形，后续会再进行不断的优化。</p><p>&emsp;&emsp;<strong>从今天开始再此记录自己的学习记录，同时与大家分享自己的生活点滴，希望以后可以在这里找到美好的回忆！</strong></p><h1 id="博客搭建"><a href="#博客搭建" class="headerlink" title="博客搭建"></a>博客搭建</h1><p>&emsp;&emsp;关于使用Hexo+Git+Next搭建博客的详细教程，已经有前人写的非常详细，在此列出个人参考的两个教程，并在此向原作者表示感谢！</p><p><strong>参考教程：</strong><br><a href="https://zhuanlan.zhihu.com/p/33616481" target="_blank" rel="noopener">Hexo搭建的GitHub博客之优化大全</a><br><a href="https://www.cnblogs.com/liuxianan/p/build-blog-website-by-hexo-github.html" target="_blank" rel="noopener">使用hexo+github搭建免费个人博客详细教程</a></p><p>&emsp;&emsp;通过以上两个详细的教程很快就可以搭建出个人的博客雏形，至于后续的博客优化可以根据个人喜好来进行整理，关于本博客的部分优化方法，后续也会发布在这里与大家分享！欢迎大家浏览和评论来进行交流！</p><blockquote><p>后续会陆续将自己以前在各个网站发布的博客和文章迁移到此，并进行整理，开始自己的新的学习历程！🙂</p></blockquote>]]></content:encoded>
       
       <comments>https://hbzjt2012.github.io/2019/06/04/Hexo+Next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/#disqus_thread</comments>
     </item>

@@ -1,0 +1,15 @@
+
+# welcome to : https://hbzjt2012.github.io/
+User-agent: *
+Allow: /
+Allow: /archives/
+Allow: /categories/
+Allow: /about/
+
+Disallow: /js/
+Disallow: /css/
+Disallow: /fonts/
+Disallow: /vendors/
+Disallow: /lib/
+Sitemap: https://hbzjt2012.github.io/sitemap.xml
+Sitemap: https://hbzjt2012.github.io/baidusitemap.xml

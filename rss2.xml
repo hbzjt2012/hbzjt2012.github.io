@@ -8,8 +8,27 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>积累技术知识，记录生活点滴&lt;br&gt; To Share,To Enjoy,To Be Happy!</description>
-    <pubDate>Mon, 17 Jun 2019 10:02:52 GMT</pubDate>
+    <pubDate>Mon, 17 Jun 2019 11:09:54 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>Hexo博客SEO优化</title>
+      <link>https://hbzjt2012.github.io/posts/ca0e86e3.html</link>
+      <guid>https://hbzjt2012.github.io/posts/ca0e86e3.html</guid>
+      <pubDate>Mon, 17 Jun 2019 10:27:15 GMT</pubDate>
+      <description>
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla
+        
+      
+      </description>
+      
+      <content:encoded><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>&emsp;&emsp;今天对博客进行了SEO优化，添加了百度和谷歌对本博客网址的收录，主要参考了以下链接进行，本文章主要记录优化过程中踩过的坑。</p><p><strong>SEO优化参考链接</strong></p><p><a href="https://blog.csdn.net/lzy98/article/details/81140704" target="_blank" rel="noopener">HEXO SEO 高级优化</a><br><a href="https://www.jianshu.com/p/86557c34b671" target="_blank" rel="noopener">Hexo Seo优化让你的博客在google搜索排名第一</a><br><a href="http://www.huangnx.com/2016/04/01/blogForSearch/" target="_blank" rel="noopener">Hexo搭建博客之博客搜索引擎推广</a><br><a href="https://blog.csdn.net/sunshine940326/article/details/70936988" target="_blank" rel="noopener">hexo高阶教程：想让你的博客被更多的人在搜索引擎中搜到吗？</a></p><p><strong>踩坑记录</strong></p><blockquote><p><strong>使用html文件对网站进行验证时，Hexo预编译验证文件造成验证不成功</strong></p></blockquote><p>解决方法：<br>&emsp;&emsp;通过在站点配置文件<code>_config.yml</code> 中对<code>skip_render</code>参数进行配置，添加不需要Hexo编译的文件，这样在Hexo编程生成静态博客时就不会向验证html文件添加信息。搜索网上大部分都说是通过在html文件中增加<code>layout: false</code>就可以实现，但是我没有测试成功。</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">skip_render:</span></span><br><span class="line"><span class="bullet">  -</span> <span class="string">'baidu_verify_6UgPtMn0rQ.html'</span></span><br><span class="line"><span class="bullet">  -</span> <span class="string">'google84c1edd8be8df542.html'</span></span><br></pre></td></tr></table></figure><p><strong>参考</strong><br><a href="https://blog.csdn.net/ganzhilin520/article/details/79057774" target="_blank" rel="noopener">Hexo不渲染.md或者.html</a></p><blockquote><p><strong>使用<code>hexo-abbrlink</code>对博客进行URL优化后，造成已发布博客中添加的图片无法显示</strong></p></blockquote><p>解决方法：<br>&emsp;&emsp;由于对博客地址进行了优化，造成原有图片地址无法解析，需要更改图片的引用方法，详细如下面所示，修改后，图片显示正常。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">原有方法：</span><br><span class="line">![123说明](1.jpg)</span><br><span class="line">更改后：</span><br><span class="line">&#123;% asset_img 1.jpg 123说明 %&#125;</span><br></pre></td></tr></table></figure><p><strong>参考</strong><br><a href="https://www.jianshu.com/p/891cd9d803a1" target="_blank" rel="noopener">搭建个人博客 hexo + github 传图片长久链接等</a></p>]]></content:encoded>
+      
+      <comments>https://hbzjt2012.github.io/posts/ca0e86e3.html#disqus_thread</comments>
+    </item>
     
     <item>
       <title>博客添加音乐插件、网站运行时间、文章阅读次数和网站访客统计</title>

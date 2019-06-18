@@ -29,7 +29,7 @@
   <entry>
     <title><![CDATA[博客建站更新日志]]></title>
     <url>%2Fposts%2F27266.html</url>
-    <content type="text"><![CDATA[博客建站更新日志2019.06.17 博客SEO优化，增加百度，谷歌，360搜索和搜狗收录2019.06.12 添加网站运行时间、文件浏览次数和访客统计功能2019.06.09 添加关于界面，增加博客音乐播放插件]]></content>
+    <content type="text"><![CDATA[博客建站更新日志2019.06.18 将博客主题由Next v5.1.4升级到Next v7.1.2，同时增加了书签插件和分享插件，增加博客点击爱心效果2019.06.17 博客SEO优化，增加百度，谷歌，360搜索和搜狗收录2019.06.12 添加网站运行时间、文件浏览次数和访客统计功能2019.06.09 添加关于界面，增加博客音乐播放插件]]></content>
       <categories>
         <category>Hexo</category>
       </categories>
@@ -61,8 +61,8 @@
       </categories>
       <tags>
         <tag>Hexo</tag>
-        <tag>博客</tag>
         <tag>Next</tag>
+        <tag>博客</tag>
       </tags>
   </entry>
 </search>

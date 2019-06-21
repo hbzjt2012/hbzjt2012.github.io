@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Next v7.1.2主题增加博客页脚访客统计]]></title>
+    <url>%2Fposts%2F3ad17cd4.html</url>
+    <content type="text"><![CDATA[&emsp;&emsp;博客之前使用的Next版本为v5.1.4，如果想在博客页脚增加访客统计功能需要修改主题配置文件_config.yml中的site_uv_header和site_pv_header属性值来增加访客标记，如下面所示。1234567891011121314151617# Show PV/UV of the website/page with busuanzi.# Get more information on http://ibruce.info/2015/04/04/busuanzi/busuanzi_count: # count values only if the other configs are false enable: true # custom uv span for the whole site site_uv: true site_uv_header: &lt;i class="fa fa-user"&gt;&lt;/i&gt; 本站访客数 site_uv_footer: 人次 # custom pv span for the whole site site_pv: true site_pv_header: &lt;i class="fa fa-eye"&gt;&lt;/i&gt; 本站总访问量 site_pv_footer: 次 # custom pv span for one page only page_pv: true page_pv_header: &lt;i class="fa fa-eye"&gt;&lt;/i&gt; 浏览 page_pv_footer: 次&emsp;&emsp;Next升级到v7.1.2版本后，去掉了header属性，因此默认只有访客数量的显示，如果需要在博客页脚增加访客文本标记或者其它自己想要使用的文本，需要进行以下配置。&emsp;&emsp;首先将主题配置文件中busuanzi_count功能打开，如下所示。12345678910# Show Views / Visitors of the website / page with busuanzi.# Get more information on http://ibruce.info/2015/04/04/busuanzibusuanzi_count: enable: true total_visitors: true total_visitors_icon: user total_views: true total_views_icon: eye post_views: true post_views_icon: eye&emsp;&emsp;然后在/theme/next/layout/_third-party/analytics/busuanzi-counter.swig文件中增加自己想要的文本标记即可，如：123456789101112131415161718192021222324252627 &#123;% if theme.busuanzi_count.enable %&#125;&lt;div class="busuanzi-count"&gt; &lt;script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"&gt;&lt;/script&gt; &#123;% if theme.busuanzi_count.total_visitors %&#125; &lt;span class="post-meta-item-icon"&gt; &lt;i class="fa fa-&#123;&#123; theme.busuanzi_count.total_visitors_icon &#125;&#125;"&gt;&lt;/i&gt; &lt;/span&gt; &lt;span class="site-uv" title="&#123;&#123; __('footer.total_visitors') &#125;&#125;"&gt; &amp;nbsp;本站访客数&amp;nbsp;&lt;span class="busuanzi-value" id="busuanzi_value_site_uv"&gt;&lt;/span&gt;人&lt;/span&gt; &lt;/span&gt; &#123;% endif %&#125; &#123;% if theme.busuanzi_count.total_visitors and theme.busuanzi_count.total_views %&#125; &lt;span class="post-meta-divider"&gt;|&lt;/span&gt; &#123;% endif %&#125; &#123;% if theme.busuanzi_count.total_views %&#125; &lt;span class="post-meta-item-icon"&gt; &lt;i class="fa fa-&#123;&#123; theme.busuanzi_count.total_views_icon &#125;&#125;"&gt;&lt;/i&gt; &lt;/span&gt; &lt;span class="site-pv" title="&#123;&#123; __('footer.total_views') &#125;&#125;"&gt; &amp;nbsp;本站总访问量&amp;nbsp;&lt;span class="busuanzi-value" id="busuanzi_value_site_pv"&gt;&lt;/span&gt;次&lt;/span&gt; &lt;/span&gt; &#123;% endif %&#125;&lt;/div&gt;&#123;% endif %&#125;效果]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Next</tag>
+        <tag>Hexo</tag>
+        <tag>访客统计</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Hexo博客SEO优化]]></title>
     <url>%2Fposts%2Fca0e86e3.html</url>
     <content type="text"><![CDATA[&emsp;&emsp;今天对博客进行了SEO优化，添加了百度和谷歌对本博客网址的收录，主要参考了以下链接进行，本文章主要记录优化过程中踩过的坑。SEO优化参考链接HEXO SEO 高级优化Hexo Seo优化让你的博客在google搜索排名第一Hexo搭建博客之博客搜索引擎推广hexo高阶教程：想让你的博客被更多的人在搜索引擎中搜到吗？踩坑记录使用html文件对网站进行验证时，Hexo预编译验证文件造成验证不成功解决方法：&emsp;&emsp;通过在站点配置文件_config.yml 中对skip_render参数进行配置，添加不需要Hexo编译的文件，这样在Hexo编程生成静态博客时就不会向验证html文件添加信息。搜索网上大部分都说是通过在html文件中增加layout: false就可以实现，但是我没有测试成功。123skip_render: - 'baidu_verify_6UgPtMn0rQ.html' - 'google84c1edd8be8df542.html'参考Hexo不渲染.md或者.html使用hexo-abbrlink对博客进行URL优化后，造成已发布博客中添加的图片无法显示解决方法：&emsp;&emsp;由于对博客地址进行了优化，造成原有图片地址无法解析，需要更改图片的引用方法，详细如下面所示，修改后，图片显示正常。1234原有方法：![123说明](1.jpg)更改后：&#123;% asset_img 1.jpg 123说明 %&#125;参考搭建个人博客 hexo + github 传图片长久链接等]]></content>
@@ -21,9 +34,9 @@
       </categories>
       <tags>
         <tag>Hexo</tag>
+        <tag>访客统计</tag>
         <tag>音乐插件</tag>
         <tag>阅读次数</tag>
-        <tag>访客统计</tag>
       </tags>
   </entry>
   <entry>
@@ -46,8 +59,8 @@
         <category>Hexo</category>
       </categories>
       <tags>
-        <tag>Hexo</tag>
         <tag>Next</tag>
+        <tag>Hexo</tag>
         <tag>Valine</tag>
         <tag>留言板</tag>
       </tags>
@@ -60,8 +73,8 @@
         <category>Hexo</category>
       </categories>
       <tags>
-        <tag>Hexo</tag>
         <tag>Next</tag>
+        <tag>Hexo</tag>
         <tag>博客</tag>
       </tags>
   </entry>
